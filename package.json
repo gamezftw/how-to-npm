@@ -1,0 +1,26 @@
+{
+  "name": "@gamezftw/how-to-npm",
+  "version": "1.0.0",
+  "description": "Learning how-to-npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodejs test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamezftw/how-to-npm.git"
+  },
+  "keywords": [
+    "how-to-npm"
+  ],
+  "author": "gamezftw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamezftw/how-to-npm/issues"
+  },
+  "homepage": "https://github.com/gamezftw/how-to-npm#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {}
+}
