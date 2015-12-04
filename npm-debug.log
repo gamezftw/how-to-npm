@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.1
+3 info using node@v4.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/nikola/Documents/how-to-npm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package.tgz not in flight; packing
+9 info lifecycle @gamezftw/how-to-npm@0.0.1~prepublish: @gamezftw/how-to-npm@0.0.1
+10 silly lifecycle @gamezftw/how-to-npm@0.0.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package.tgz',
+11 verbose tar pack   '/home/nikola/Documents/how-to-npm' ]
+12 verbose tarball /home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package.tgz
+13 verbose folder /home/nikola/Documents/how-to-npm
+14 verbose addLocalTarball adding from inside cache /home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package.tgz
+15 silly cache afterAdd @gamezftw/how-to-npm@0.0.1
+16 verbose afterAdd /home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package/package.json written
+18 silly publish { name: '@gamezftw/how-to-npm',
+18 silly publish   version: '0.0.1',
+18 silly publish   description: 'Learning how-to-npm',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'nodejs test.js' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/gamezftw/how-to-npm.git' },
+18 silly publish   keywords: [ 'how-to-npm' ],
+18 silly publish   author: { name: 'gamezftw' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/gamezftw/how-to-npm/issues' },
+18 silly publish   homepage: 'https://github.com/gamezftw/how-to-npm',
+18 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+18 silly publish   devDependencies: {},
+18 silly publish   readme: 'Learning how-to-npm.\n',
+18 silly publish   readmeFilename: 'Readme.md',
+18 silly publish   gitHead: '6323373b109650c1a033d3261cda58bc5a22ece7',
+18 silly publish   _id: '@gamezftw/how-to-npm@0.0.1',
+18 silly publish   _shasum: '6b32def1f53cc2031dd9b29aa358a8b33a62aa6a',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name @gamezftw/how-to-npm
+21 silly mapToRegistry scope (from package name) @gamezftw
+22 verbose mapToRegistry no registry URL found in name for scope @gamezftw
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@gamezftw%2fhow-to-npm
+26 verbose publish registryBase https://registry.npmjs.org/
+27 silly publish uploading /home/nikola/.npm/@gamezftw/how-to-npm/0.0.1/package.tgz
+28 verbose request uri https://registry.npmjs.org/@gamezftw%2fhow-to-npm
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 7:44:43 PM
+31 verbose request using bearer token for auth
+32 verbose request id 74d0a179dcf9def9
+33 http request PUT https://registry.npmjs.org/@gamezftw%2fhow-to-npm
+34 http 402 https://registry.npmjs.org/@gamezftw%2fhow-to-npm
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=0',
+35 verbose headers   'content-length': '119',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Fri, 04 Dec 2015 18:44:44 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-fra1241-FRA',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1449254683.486711,VS0,VE1203' }
+36 verbose request invalidating /home/nikola/.npm/registry.npmjs.org/_40gamezftw_252fhow-to-npm on PUT
+37 error publish Failed PUT 402
+38 verbose stack Error: You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @gamezftw/how-to-npm
+38 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:198:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+39 verbose statusCode 402
+40 verbose pkgid @gamezftw/how-to-npm
+41 verbose cwd /home/nikola/Documents/how-to-npm
+42 error Linux 3.19.0-39-generic
+43 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+44 error node v4.2.2
+45 error npm  v3.5.1
+46 error code E402
+47 error You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @gamezftw/how-to-npm
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
